@@ -550,9 +550,9 @@
         </div>
         <div class="footer-subscribe-container">
           <div class="">
-            <label class="footer-subscribe-label" for="footer-subscribe"
-              >Subscribe</label
-            >
+            <p class="footer-subscribe-label" for="footer-subscribe">
+              Subscribe
+            </p>
             <div class="subscribe-wrap">
               <input
                 class="footer-subscribe-input"
@@ -574,10 +574,10 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
-          <svg class="modal-btn-icon" width="24" height="24">
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -592,7 +592,7 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -607,7 +607,7 @@
                 name="user-phone"
                 id="user-phone"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -622,13 +622,13 @@
                 name="user-email"
                 id="user-email"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-field modal-field-comment">
             <label class="form-label" for="user-comment"> Comment</label>
             <textarea
               class="modal-comment"
@@ -641,16 +641,17 @@
             <input
               class="check-input visually-hidden"
               type="checkbox"
-              name="modal-check"
-              id="modal-check"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <label class="check-text" for="modal-check">
-              <span
-                ><svg class="modal-check-icon" width="16" height="16">
+            <label class="check-text" for="user-privacy">
+              <span class="user-privacy-wrap"
+                ><svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check-box"></use></svg
               ></span>
               I accept the terms and conditions of the
-              <a href="/">Privacy Policy</a></label
+              <a class="user-privacy-link" href="/">Privacy Policy</a></label
             >
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
