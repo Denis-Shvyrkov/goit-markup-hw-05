@@ -550,7 +550,10 @@
         </div>
         <div class="footer-subscribe-container">
           <p class="footer-subscribe-label">Subscribe</p>
-          <div class="subscribe-wrap">
+          <form class="subscribe-wrap">
+            <label class="visually-hidden" for="footer-subscribe"
+              >Subscribe</label
+            >
             <input
               class="footer-subscribe-input"
               type="email"
@@ -564,13 +567,13 @@
                 <use href="./images/icons.svg#icon-Subscribe"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
